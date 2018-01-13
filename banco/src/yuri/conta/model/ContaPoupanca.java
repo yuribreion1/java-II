@@ -14,4 +14,9 @@ public class ContaPoupanca extends Conta{
 	public void deposita(double valorDepositado) {
 		this.saldo += valorDepositado - 0.10;
 	}
+
+	@Override
+	public boolean autentica(String senha) {
+		return false;
+	}
 }

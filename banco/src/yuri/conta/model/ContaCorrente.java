@@ -10,4 +10,9 @@ public class ContaCorrente extends Conta{
 	public void atualiza(double taxa) {
 		this.saldo += saldo * taxa * 2;
 	}
+
+	@Override
+	public boolean autentica(String senha) {
+		return false;
+	}
 }

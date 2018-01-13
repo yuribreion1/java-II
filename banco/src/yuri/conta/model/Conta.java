@@ -1,6 +1,8 @@
 package yuri.conta.model;
 
-abstract class Conta {
+import yuri.banco.interfaces.Autenticavel;
+
+abstract class Conta implements Autenticavel{
 	protected String nome;
 	protected double saldo;
 	protected double taxa;

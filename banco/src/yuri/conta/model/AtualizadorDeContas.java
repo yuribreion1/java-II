@@ -31,5 +31,10 @@ public class AtualizadorDeContas extends Conta {
 		this.saldoTotal += c.getSaldo();
 		
 	}
+
+	@Override
+	public boolean autentica(String senha) {
+		return false;
+	}
 	
 }
