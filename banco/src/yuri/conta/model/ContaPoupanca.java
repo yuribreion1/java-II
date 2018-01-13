@@ -2,6 +2,10 @@ package yuri.conta.model;
 
 public class ContaPoupanca extends Conta{
 
+	public ContaPoupanca(String nome, double saldo, double taxa) {
+		super(nome, saldo, taxa);		
+	}
+
 	public void atualiza(double taxa) {
 		this.saldo += saldo * taxa * 3;
 	}

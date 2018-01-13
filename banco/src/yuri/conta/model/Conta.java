@@ -1,8 +1,16 @@
 package yuri.conta.model;
 
-public class Conta {
+abstract class Conta {
+	protected String nome;
 	protected double saldo;
 	protected double taxa;
+	
+	//Criando construtor para conta...
+	public Conta(String nome, double saldo, double taxa) {
+		this.nome = nome;
+		this.saldo = saldo;
+		this.taxa = taxa;
+	}
 
 	public double getTaxa() {
 		return taxa;

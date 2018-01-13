@@ -1,37 +1,39 @@
 package yuri.banco.model;
 
-public class Funcionario {
-	
+public abstract class Funcionario {
+
 	/*
-	 * Super classe que extende a outros tipos especificos de funcionario
-	 * Usando conceitos de heranca
-	 * */
-	
+	 * Super classe que extende a outros tipos especificos de funcionario Usando
+	 * conceitos de heranca
+	 */
+
 	private String nome;
 	private String cpf;
 	protected double salario;
-	
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public String getCpf() {
 		return cpf;
 	}
+
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
 	public double getSalario() {
 		return salario;
 	}
+
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
-	public double getBonus() {
-		return this.salario * 0.1;
-	}
-	
+
+	abstract double getBonus();
 }

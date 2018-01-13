@@ -1,10 +1,12 @@
 package yuri.conta.model;
 
-public class AtualizadorDeContas extends Conta{
+public class AtualizadorDeContas extends Conta {
+	public AtualizadorDeContas(String nome, double saldo, double taxa) {
+		super(nome, saldo, taxa);
+	}
+
 	private double saldoTotal = 0;
 	private double selic; 
-	
-	
 	
 	public double getSaldoTotal() {
 		return saldoTotal;
@@ -19,10 +21,6 @@ public class AtualizadorDeContas extends Conta{
 	}
 
 	public void setSelic(double selic) {
-		this.selic = selic;
-	}
-
-	public AtualizadorDeContas(double selic) { 
 		this.selic = selic;
 	}
 	
