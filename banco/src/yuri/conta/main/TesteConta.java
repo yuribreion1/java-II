@@ -5,7 +5,7 @@ import yuri.conta.exceptions.SaldoInsuficienteException;
 import yuri.conta.model.AtualizadorDeContas;
 import yuri.conta.model.ContaCorrente;
 
-public class Teste {
+public class TesteConta {
 
 	public static void main(String[] args) {
 

@@ -4,7 +4,7 @@ import yuri.banco.model.ControleBonus;
 import yuri.banco.model.Desenvolvedor;
 import yuri.banco.model.Gerente;
 
-public class Teste {
+public class TesteBanco {
 
 	public static void main(String[] args) {
 		Gerente gerente = new Gerente();
