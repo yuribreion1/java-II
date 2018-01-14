@@ -1,6 +1,15 @@
 package yuri.conta.model;
 
 public class AtualizadorDeContas extends Conta {
+	
+	/**
+	 * Atualiza o saldo da conta aplicando taxa Selic
+	 * @author yuribreion
+	 * @param nome
+	 * @param saldo
+	 * @param taxa
+	 */
+	
 	public AtualizadorDeContas(String nome, double saldo, double taxa) {
 		super(nome, saldo, taxa);
 	}

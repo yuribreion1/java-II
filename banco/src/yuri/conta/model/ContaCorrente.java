@@ -2,6 +2,14 @@ package yuri.conta.model;
 
 public class ContaCorrente extends Conta{
 	
+	/**
+	 * Classe filha de Conta
+	 * @author yuribreion
+	 * @param nome
+	 * @param saldo
+	 * @param taxa
+	 */
+	
 	public ContaCorrente(String nome, double saldo, double taxa) {
 		super(nome, saldo, taxa);
 	}

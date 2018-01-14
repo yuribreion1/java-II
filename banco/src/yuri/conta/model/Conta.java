@@ -8,8 +8,16 @@ abstract class Conta implements Autenticavel {
 	protected String nome;
 	protected double saldo;
 	protected double taxa;
+	
+	/**
+	 * Classe abstrata para conta bancaria
+	 * @author yuribreion
+	 * @param nome
+	 * @param saldo
+	 * @param taxa
+	 * @throws Exception - Lancada para saques e depositos invalidos
+	 */
 
-	// Criando construtor para conta...
 	public Conta(String nome, double saldo, double taxa) {
 		this.nome = nome;
 		this.saldo = saldo;

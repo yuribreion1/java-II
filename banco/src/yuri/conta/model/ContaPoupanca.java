@@ -1,6 +1,14 @@
 package yuri.conta.model;
 
 public class ContaPoupanca extends Conta{
+	
+	/**
+	 * Classe filha de conta
+	 * @author yuribreion
+	 * @param nome
+	 * @param saldo
+	 * @param taxa
+	 */
 
 	public ContaPoupanca(String nome, double saldo, double taxa) {
 		super(nome, saldo, taxa);		

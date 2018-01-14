@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"yuri.banco.interfaces"},{"l":"yuri.banco.main"},{"l":"yuri.banco.model"},{"l":"yuri.conta.exceptions"},{"l":"yuri.conta.interfaces"},{"l":"yuri.conta.main"},{"l":"yuri.conta.model"}]
