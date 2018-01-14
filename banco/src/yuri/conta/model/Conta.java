@@ -1,6 +1,8 @@
 package yuri.conta.model;
 
 import yuri.banco.interfaces.Autenticavel;
+import yuri.conta.exceptions.DepositoInvalidoException;
+import yuri.conta.exceptions.SaldoInsuficienteException;
 
 abstract class Conta implements Autenticavel {
 	protected String nome;
@@ -35,8 +37,9 @@ abstract class Conta implements Autenticavel {
 			this.saldo += valorDepositado;
 			System.out.println("Deposito de " + valorDepositado + " feito com sucesso!");
 		} else {
-			throw new RuntimeException("Valor incorreto para deposito");
+			throw new DepositoInvalidoException(valorDepositado);
 		}
+
 	}
 
 	public void saca(double valorSacado) {
@@ -45,7 +48,7 @@ abstract class Conta implements Autenticavel {
 			System.out.println("Saque de " + valorSacado + " feito com sucesso!\nUma taxa de " + taxa
 					+ " foi aplicada a transacao");
 		} else {
-			throw new RuntimeException("Valor insuficiente");
+			throw new SaldoInsuficienteException(saldo);
 		}
 	}
 }
